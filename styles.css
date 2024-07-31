@@ -1,0 +1,269 @@
+:root {
+    --general-padding: 1rem;
+    --header-bg: #7722ff;
+    --body-bg: #b084f1;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--body-bg);
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+header {
+    padding: 3rem;
+    background-color: var(--header-bg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.5rem;
+    user-select: none;
+    color: #000;
+}
+
+h2 {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: var(--general-padding);
+}
+
+main {
+    min-height: 75vh;
+    padding: calc(1.5 * var(--general-padding)) calc(2 * var(--general-padding));
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-message {
+    font-size: 2rem;
+    color: #0006;
+    text-align: center;
+    user-select: none;
+}
+
+/* menu */
+
+.albums-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(1.5 * var(--general-padding));
+    margin: 2rem 0 4rem;
+}
+
+.album-item {
+    width: 300px;
+    height: 300px;
+    border-radius: .5rem;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 300ms ease;
+    -webkit-user-drag: none;
+}
+
+.album-item:hover {
+    transform: scale(1.05);
+    background-color: #000b;
+    background-blend-mode: darken;
+}
+
+.album-item:hover::after {
+    padding: .25rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.album-item-ppm {
+    background-image: url(images/pleasepleaseme.jfif);
+}
+
+.album-item-ppm:hover::after {
+    content: 'Please Please Me';
+}
+
+.album-item-wtb {
+    background-image: url(images/withthebeatles.jpg);
+}
+
+.album-item-wtb:hover::after {
+    content: 'With The Beatles';
+}
+
+.album-item-bfs {
+    background-image: url(images/beatlesforsale.jpg);
+}
+
+.album-item-bfs:hover::after {
+    content: 'Beatles For Sale';
+}
+
+.album-item-hard {
+    background-image: url(images/aharddaysnight.jpg);
+}
+
+.album-item-hard:hover::after {
+    content: 'A Hard Day\'s Night';
+}
+
+.album-item-help {
+    background-image: url(images/help.jpg);
+}
+
+.album-item-help:hover::after {
+    content: 'Help';
+}
+
+.album-item-rub {
+    background-image: url(images/rubbersoul.jpg);
+}
+
+.album-item-rub:hover::after {
+    content: 'Rubber Soul';
+}
+
+.album-item-rev {
+    background-image: url(images/revolver.jpg);
+}
+
+.album-item-rev:hover::after {
+    content: 'Revolver';
+}
+
+.album-item-sgt {
+    background-image: url(images/sgtpepper.jpg);
+}
+
+.album-item-sgt:hover::after {
+    content: 'Sgt. Pepper\'s Lonely Hearts Club Band';
+}
+
+.album-item-mag {
+    background-image: url(images/magicalmys.png);
+}
+
+.album-item-mag:hover::after {
+    content: 'Magical Mystery Tour';
+}
+
+.album-item-wht {
+    background-image: url(images/whitealbum.jpg);
+}
+
+.album-item-wht:hover::after {
+    content: 'The Beatles';
+}
+
+.album-item-abb {
+    background-image: url(images/abbeyroad.jpg);
+}
+
+.album-item-abb:hover::after {
+    content: 'Abbey Road';
+}
+
+.album-item-let {
+    background-image: url(images/letitbe.jfif);
+}
+
+.album-item-let:hover::after {
+    content: 'Let It Be';
+}
+
+/* album formatting */
+
+.album {
+    width: 50%;
+    min-width: 600px;
+    font-size: 1.25rem;
+    border-radius: .25rem;
+}
+
+.album-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    transition: all 200ms ease;
+}
+
+.album-row:not(:nth-of-type(1)):hover {
+    transform: scale(1.025);
+}
+
+.album-row-section {
+    padding: 0 calc(1 * var(--general-padding));
+    display: grid;
+    align-content: center;
+}
+
+.album-row-s1 {
+    width: 75%;
+    height: 100%;
+}
+
+.album-row-s2 {
+    width: 25%;
+    height: 100%;
+    background-color: #0003;
+    text-align: right;
+}
+
+.album-row:nth-of-type(1) {
+    font-size: 1.75rem !important;
+    user-select: none;
+}
+
+.album-row:nth-of-type(1) .album-row-s2 {
+    text-align: left !important;
+}
+
+.album-row:last-of-type {
+    font-weight: 700;
+}
+
+/* end of album formatting */
+
+footer {
+    margin-top: calc(3 * var(--general-padding));
+    background-color: var(--header-bg);
+    padding: calc(2.5 * var(--general-padding));
+    color: #fff;
+    text-align: center;
+    font-size: 1.25rem;
+    user-select: none;
+}
+
+/* general */
+
+.bold {
+    font-weight: 600;
+}
+
+.spread {
+    letter-spacing: 1px;
+}
+
+.centered {
+    text-align: center;
+}

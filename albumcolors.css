@@ -1,0 +1,265 @@
+:root {
+    --revolver-col1: #000000;
+    --revolver-col2: #fff;
+    --revolver-col3: #5a5a5a;
+    --rubbersoul-col1: #fd4a15;
+    --rubbersoul-col2: #008b46;
+    --rubbersoul-col3: #0ebe66;
+    --pleaseme-col1: #ffff1d;
+    --pleaseme-col2: #dd902a;
+    --pleaseme-col3: #d8ffff;
+    --withtheb-col1: #000000;
+    --withtheb-col2: #ffffff;
+    --withtheb-col3: #0f0f0f;
+    --ahardday-col1: #2d30da;
+    --ahardday-col2: #000000;
+    --ahardday-col3: #ffffff;
+    --beatlesfs-col1: #ff9914;
+    --beatlesfs-col2: #fff350;
+    --beatlesfs-col3: #0e0e0e;
+    --help-col1: #1166e6;
+    --help-col2: #e0e0e0;
+    --help-col3: #ffffff;
+    --sgtpepper-col1: #059705;
+    --sgtpepper-col2: #f3f169;
+    --sgtpepper-col3: #e91f11;
+    --magicalmys-col1: #4964ff;
+    --magicalmys-col2: #f0e00a;
+    --magicalmys-col3: #d81ea0;
+    --whitealbum-col1: #e6e6e6;
+    --whitealbum-col2: #ffffff;
+    --abbeyroad-col1: #0b6927;
+    --abbeyroad-col2: #ffffff;
+    --abbeyroad-col3: #656669;
+    --letitbe-col1: #161616;
+    --letitbe-col2: #ffffff;
+    --letitbe-col3: #530d04;
+}
+
+.album-pleaseme {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--pleaseme-col1) !important;
+        color: #000 !important;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--pleaseme-col2);
+        color: #000;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--pleaseme-col3);
+        color: #000;
+    }
+
+}
+
+.album-withtheb {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--withtheb-col1) !important;
+        color: #fff !important;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--withtheb-col2);
+        color: #000;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--withtheb-col3);
+        color: #fff;
+    }
+
+}
+
+.album-ahardday {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--ahardday-col1) !important;
+        color: #fff !important;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--ahardday-col2);
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--ahardday-col3);
+        color: #000;
+    }
+
+}
+
+.album-beatlesfs {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--beatlesfs-col1) !important;
+        color: #000 !important;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--beatlesfs-col2);
+        color: #000;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--beatlesfs-col3);
+        color: #fff;
+    }
+
+}
+
+.album-help {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--help-col1) !important;
+        color: #fff !important;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--help-col2);
+        color: #000;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--help-col3);
+        color: #000;
+    }
+
+}
+
+.album-rubbersoul {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--rubbersoul-col1) !important;
+        color: #ffffff !important;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--rubbersoul-col2);
+        color: #000;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--rubbersoul-col3);
+        color: #000;
+    }
+
+}
+
+.album-revolver {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--revolver-col1) !important;
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--revolver-col3);
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--revolver-col2);
+        color: #000;
+    }
+
+}
+
+.album-sgtpepper {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--sgtpepper-col1) !important;
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--sgtpepper-col3);
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--sgtpepper-col2);
+        color: #000;
+    }
+
+}
+
+.album-magicalmys {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--magicalmys-col1) !important;
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--magicalmys-col3);
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--magicalmys-col2);
+        color: #000;
+    }
+
+}
+
+.album-whitealbum {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--whitealbum-col1) !important;
+        color: #000;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--whitealbum-col1);
+        color: #000;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--whitealbum-col2);
+        color: #000;
+    }
+
+}
+
+.album-abbeyroad {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--abbeyroad-col1) !important;
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--abbeyroad-col3);
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--abbeyroad-col2);
+        color: #000;
+    }
+
+}
+
+.album-letitbe {
+    
+    .album-row:nth-of-type(1) {
+        background-color: var(--letitbe-col1) !important;
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(odd) {
+        background-color: var(--letitbe-col3);
+        color: #fff;
+    }
+
+    .album-row:nth-of-type(even) {
+        background-color: var(--letitbe-col2);
+        color: #000;
+    }
+
+}
